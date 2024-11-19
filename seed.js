@@ -15,7 +15,10 @@ const seedMovies = async () => {
       { title: "Inception", director: "Christopher Nolan", genre: "Sci-Fi", releaseYear: 2010, rating: 8.8, duration: 148 },
       { title: "The Godfather", director: "Francis Ford Coppola", genre: "Crime", releaseYear: 1972, rating: 9.2, duration: 175 },
       { title: "The Dark Knight", director: "Christopher Nolan", genre: "Action", releaseYear: 2008, rating: 9.0, duration: 152 },
-      { title: "Pulp Fiction", director: "Quentin Tarantino", genre: "Crime", releaseYear: 1994, rating: 8.9, duration: 154 }
+      { title: "Pulp Fiction", director: "Quentin Tarantino", genre: "Crime", releaseYear: 1994, rating: 8.9, duration: 154 },
+      { title: "Forrest Gump", director: "Robert Zemeckis", genre: "Drama", releaseYear: 1994, rating: 8.8, duration: 142 },
+      {title: "Alien", director: "Ridley Scott", genre: "Horror, Scifi", releaseYear: 1979, rating: 8.4, duration: 117}
+
     ];
 
     // Remove existing documents to avoid duplicates
