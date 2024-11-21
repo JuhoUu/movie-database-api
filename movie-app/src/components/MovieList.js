@@ -1,7 +1,7 @@
 // src/components/MovieList.js
 import React from 'react';
 
-const MovieList = ({ movies }) => {
+const MovieList = ({ movies, onViewDetails, onDelete }) => {
   return (
     <div className="row">
       {movies.map((movie) => (
@@ -10,10 +10,23 @@ const MovieList = ({ movies }) => {
             <div className="card-body">
               <h5 className="card-title">{movie.title}</h5>
               <p className="card-text"><strong>Director:</strong> {movie.director}</p>
-              <p className="card-text"><strong>Genre:</strong> {movie.genre}</p>
-              <p className="card-text"><strong>Release Year:</strong> {movie.releaseYear}</p>
-              <p className="card-text"><strong>Rating:</strong> {movie.rating}</p>
-              <p className="card-text"><strong>Duration:</strong> {movie.duration} minutes</p>
+             
+
+              {/* View Details Button */}
+              <button
+                className="btn btn-primary btn-sm me-2"
+                onClick={() => onViewDetails(movie._id)}
+              >
+                View Details
+              </button>
+
+              {/* Delete Button */}
+              <button
+                className="btn btn-danger btn-sm"
+                onClick={() => onDelete(movie._id)}
+              >
+                Delete
+              </button>
             </div>
           </div>
         </div>
