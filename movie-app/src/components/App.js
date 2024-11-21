@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAllMovies, getMovieById, deleteMovie, addMovie, updateMovie } from './api'; // Include updateMovie
 import MovieList from './MovieList';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css'; // Correct if App.css is in the src folder and App.js is in components folder
 
 const App = () => {
