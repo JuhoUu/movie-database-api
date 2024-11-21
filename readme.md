@@ -1,3 +1,1 @@
-This is the second project for Fullstack development course. The idea was to create a Node.js site REST API. I made a movie database api and published it to Github and Render.
-
-render: https://movie-database-api-vc99.onrender.com/api/getall
+This is the last project of the Fullstack course. The idea was to create a frontend with React for the movie database API I created on the last project. The user can search for a movie, view details, update, delete or even create a new movie. Published on render, link https://movie-database-api-1.onrender.com/
